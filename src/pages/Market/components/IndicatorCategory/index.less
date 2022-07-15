@@ -1,0 +1,36 @@
+.root {
+  position: relative;
+  height: 100%;
+  padding: 16px 12px;
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    .icon {
+      display: flex;
+      align-items: center;
+      .title {
+        font-size: 16px;
+        font-family: PingFangSC, PingFangSC-Seminole;
+        font-weight: 600;
+        text-align: left;
+        color: #333333;
+        line-height: 24px;
+        letter-spacing: 0.57px;
+      }
+    }
+    .btnGroup {
+      float: right;
+    }
+  }
+  :global {
+    .spin {
+      height: calc(100% - 32px);
+      .ant-spin-container {
+        height: 100% !important;
+      }
+    }
+  }
+}
